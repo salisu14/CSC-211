@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Element Selectors</title>
+    <style>
+       h1{
+         color: red;
+         font-size: 5rem;
+         border: 20px dotted black;
+         margin: 0;
+	 padding: 1em;
+	 text-transform: capitalize;
+         text-shadow: 10px 5px 2px coral;	 
+       }
+       h1::first-letter { font-size: 10rem; color: blue;  }
+       span { color: fuchsia; font-style: italic; }
+       p { color: teal; border: 1px dotted #32424; background-color: gray; }
+       #bunch { font-size: 20px; color: #ccc;}
+
+       input[type="button"] {
+         text-align: center;
+	 text-decoration: overline;
+	 padding: .25em;
+	 font-size: 1.5rem;
+	 background-color: goldenrod;
+	 color: red;
+	 border-radius: 5px;
+	 width: 200px;
+       }
+    </style>
+  </head>
+  <body>
+	  <div class="container">
+	  <h1>welcome to <span>CSC 211</span></h1>
+	  <p id="bunch">Some bunch of text</p>
+	  <p>This is also another paragraph</p>
+	  </div>
+	  <form>
+	     <input type="button" value="2">
+	  </form>
+  </body>
+</html>

@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Flex  Menu</title>
+    <style>
+       :root { 
+	   box-sizing: border-box; 
+           --page-bg: #eee7be;
+	   --header-bg: #000;
+	   --nav-bg: #facd8a;
+           --primary: #173f5f;
+           --button-bg: #05479b;
+           --error: #ed553b;
+           --secondary: #3caea3;
+           --dark-text: #444;
+           --light-text: #fff;
+       }
+       
+       *, ::before, ::after { box-sizing: inherit; }
+       
+       body {
+         font-family: Helvetica, Arial, sans-serif;
+	 background-color: var(--page-bg);
+       }
+       
+       body * + * {
+        margin-top: 1em;
+       }
+
+       header { 
+        background-color: var(--header-bg);
+	padding: .95rem;
+        border-radius: .45em;
+       }
+
+       header img {
+	margin-top: 0;
+	margin-right: 1.5em;
+        float: left;
+	width: 4vw;
+	height: 7vh;
+       }
+       
+       header > h1 {
+	 margin-top: 0;
+	 font-size: 2.5em;
+         color: var(--light-text);
+	 text-shadow: 4px 4px 4px #fb0023; 
+       }
+       
+       .nav-links {
+         padding: .5em;	 
+         list-style: none;
+         display: flex;	
+	 background-color: var(--primary);
+	 border-radius: .25em;
+       }
+
+       .nav-links > li {
+         margin-top: 0;
+       }
+       
+       .nav-links > li > a {
+         display: block;
+	 padding: .5em 1em;
+         text-decoration: none;
+         background-color: var(--button-bg);
+	 color: var(--light-text);
+	 font-size: 1rem;
+	 font-weight: bold;
+	 transition: all 0.4s ease;
+       }
+
+       .nav-links > li > a:hover {
+         color: var(--light-text);
+	 cursor: pointer;
+         background-color: transparent;
+	 font-size: 1.1rem;
+       }
+
+
+       
+
+       .nav-links > li + li {
+         margin-left: 1.5em;
+       }
+      
+       .nav-links > .nav-right {
+        margin-left: auto;
+       }
+       .container {
+	 max-width: 80%;
+	 margin: 0 auto;
+       }
+      
+       .tile { 
+         padding: 1.5em;
+	 background-color: var(--light-text);
+       }
+
+       .flex {
+        display: flex;
+       }
+
+       .flex > * + * { 
+         margin-top: 0;
+	 margin-left: 1.5em;
+       }
+      
+       .column-main { 
+         flex: 2;
+       }
+
+       .column-sidebar { 
+         flex: 1;
+	 display: flex;
+	 flex-direction: column;
+       }
+
+       .column-sidebar > .tile {
+         flex: 1em;
+       }
+
+       .login-form h3 {  
+         margin: 0;
+	 font-size: .9em;
+	 font-weight: bold;
+	 text-align: right;
+	 text-transform: uppercase;
+       }
+
+       .login-form input[type="text"], input[type="password"] { 
+         display: block;
+	 width: 100%;
+	 margin-top: 0;
+       }
+
+       .login-form button {
+	 border: none;
+	 border-radius: .25em;
+	 color: var(--light-text);
+         font-weight: bold;
+	 background-color: var(--button-bg);
+	 padding: .5em 1em;
+	 cursor: pointer;
+       }
+
+       .main-footer {
+         background-color: #000;
+	 padding: .55em;
+	 color: var(--light-text);
+	 font-weight: bold;
+	 border-radius: .45em;
+       }
+    </style>
+  </head>
+  <body>
+   <div class="container">
+     <header>
+	     <a href="http://www.fud.edu.ng"><img src="fud-logo.jpg" alt="FUD Logo" /></a>
+	 <h1>Faculty of Computing FUD</h1>
+     </header>
+     <nav>
+	<ul class="nav-links">
+	  <li><a href="#">Computer Science</a></li>
+	  <li><a href="#">Cyber Security</a></li>
+	  <li><a href="#">Information Technology</a></li>
+	  <li><a href="#">Software Engineering</a></li>
+	  <li class="nav-right"><a href="#">Other Faculties</a></li>
+	</ul>
+     </nav>
+     <main class="flex">
+       <div class="column-main tile">
+         <h1>How the web application operates</h1>
+	       <p>The world wide web, or web, consists of many components that work together to bring
+a web page your browser over the Internet. Before you create your own web pages, you
+need to have a basic understanding of how these components work together.
+<p>
+ The web application consists of clients, a web server, and a network. The clients use
+programs to known as web browsers to request web pages from the web server. The
+web server returns the pages that are requested to the browser.
+</p>
+<p>
+ The local area network (LAN) directly connects computers that are near each other.
+This kind of network is often called an intranet.
+
+ A Wide Area Network (WAN) consists of two or more LANs that are connected by
+routers. The routers route information from one network to another.
+</p>
+<p>
+ The Internet consists of many WANs that have been connected at Internet Exchange
+Points (IXP). There are several dozen IXPs located throughout the world.
+
+ An Internet Service Provider (ISP) owns a WAN and leases access to its network. It
+connects its WAN to the rest of the Internet at one or more IXPs
+</p>
+	 <h2>Some useful text heading here</h2>
+	 <p>The figure above shows that web applications consists of clients that use the web applications.
+They access the web pages through programs known as the web browsers. the web server holds
+the files that make up a web application.
+A network is a system that allows clients and servers to communicate. the internet in turn is a
+large network that consists of many smaller networks. In a diagram like this, the "Cloud"
+represents the network or Internet that connects the clients and servers.
+</p>
+	 <h1>Types of Web Pages</h1>
+	 <p>There are two types of web pages: static web page and the dynamic web page.
+A static web page is web page that only changes when the web developer changes it. This web
+page is sent directly from the web server to the web browser when the browser requests it.
+The diagram below shows that when the user requests a static web page, the browser sends an
+HTTP request to the web server that includes the name of the file that is being requested.
+When the web server receives the request, it retrieves the HTML for the web page and sends it
+back to the browser as part of an HTTP response.
+When the browser receives the HTTP response, it renders the HTML into a web page that is
+displayed in the browser.</p> 
+	 <h3>Dynamic Web Pages</h3>
+	 <p>A dynamic web page is a web page that is generated by a server-side program or script.
+When a web server receives a request for a dynamic web page, it looks up the extension of the
+requested file to find out which application server should process the request.
+When the application server receives a request, it runs the specified script. Often, this script
+uses the data that it gets from the web browser to get the appropriated data from a database
+server. this script can also store the data that it receives in the database.
+When the application server finishes processing the data, it generates the HTML for a web
+page and returns it to the web server. then, the web server returns the HTML to the web
+browser as part of an HTTP response.</p>
+       </div>
+
+       <div class="column-sidebar">
+         <div class="tile">
+	    <form class="login-form">
+	       <h3>Login</h3>
+	       <p>
+	         <label for="username">Username</label>
+		 <input type="text" id="username" name="username" />
+	       </p>
+	       <p>
+	         <label for="password">Password</label>
+		 <input type="password" id="password" name="password" />
+	       </p>
+	       <button type="submit">Login</button>
+	    </form>
+	 </div>
+	 <div class="tile centered">
+	   <small>Starting at</small>
+	   <div class="cost">
+	     <span class="cost-currency">$</span>
+	     <span class="cost-dollars">20</span>
+	     <span class="cost-cents">.00</span
+	   </div>
+	   <a class="cta-button" href="/pricing">Sign up</a>
+	 </div>
+       </div>
+      </main>
+      <footer class="main-footer">Copyright &copy; 2021 CSC 211&mdash;Introduction To Web Programming I</footer>
+    </div>
+  </body>
+</html>

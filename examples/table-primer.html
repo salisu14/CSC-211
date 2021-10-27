@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Table Primer</title>
+    <style>
+      td, th { border: 1px solid #ccc; }
+      table { border: 1px solid black; width: 35vw; height: 25vh; }
+      caption { color: #cc22ff; caption-side: top; font-size: 2rem; }
+      hr {
+        width: 100%;
+        height: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        /*background-color: #b7d0e2; */
+	background-color: gray;
+	border: none;
+      }
+      h1 { font-size: x-large; }
+    </style>
+  </head>
+  <body>
+	<h1 id="table-heading">Learning HTML5.3 and later latest features</h1>
+	<table>
+	   <caption>Your Content Here</caption>
+	   <tr>
+	     <th rowspan="2"></th>
+	     <th colspan="2">A common header for two subheads</th>
+	     <th rowspan="2">Header 3</th>
+	   </tr>
+	   <tr>
+	     <th>Header 1</th>
+	     <th>Header 2</th>
+	   </tr>
+	   <tr>
+	     <th>Things A</th>
+	     <td>data A1</td>
+	     <td>data A2</td>
+	     <td>data A3</td>
+	  </tr>
+	  <tr>
+             <th>Things B</th>
+             <td>data B1</td>
+             <td>data B2</td>
+             <td>data B3</td>
+          </tr>
+          <tr>
+             <th>Things C</th>
+             <td>data C1</td>
+             <td>data C2</td>
+             <td>data C3</td>
+          </tr>
+	</table>
+	<br>
+	<hr>
+	<form>
+	   <p>Education completed: <input type="text" list="edulevel" name="education">
+	     <datalist id="edulevel">
+	       <option value="High School">
+	       <option value="Higher National Diploma">
+	       <option value="Bachelors Degree">
+	       <option value="Masters Degree">
+	       <option value="PhD">
+	     </datalist>
+	   </p>
+	   <select name="icecream" size="7" multiple>
+             <optgroup label="traditional">
+               <option>vanilla</option>
+               <option>chocolate</option>
+             </optgroup>
+             <optgroup label="fancy">
+               <option>Super praline</option>
+               <option>Nut surprise</option>
+               <option>Candy corn</option>
+            </optgroup>
+	   </select><br>
+	  Birth date: <input type="date" name="name" value="2017-01-14"><br>
+	  Local time: <input type="time" name="name" value="03:13:00"><br>
+	  Date &mdash; time: <input type="datetime-local" name="name" value="2017-01-14T03:13:00"><br>
+	</form>
+	<p>Testing &hellip;, &ndash; &amp; &ndash; in HTML paragraph</p>
+	<p>
+	 Linking to a Specific Point in a Page
+Did you know you can link to a specific point in a web page? This is useful
+for providing shortcuts to information at the bottom of a long, scrolling page
+or for getting back to the top of a page with just one click or tap. Linking to a
+specific point in the page is also known as linking to a document fragment.
+Linking to a particular spot within a page is a two-part process. First, identify
+the destination, and then make a link to it. In the following example, I create
+an alphabetical index at the top of the page that links down to each alpha-
+betical section of a glossary page (FIGURE 6-11). When users click the letter H,
+they’ll jump to the “H” heading lower on the page.</p>
+
+	<p>Step 1: Identifying the destination
+I like to think of this step as planting a flag in the document so I can get back
+to it easily. To create a destination, use the id attribute to give the target ele-
+ment in the document a unique name (that’s “unique” as in the name may
+appear only once in the document, not “unique” as in funky and interesting).
+In web lingo, this is the fragment identifier.
+You may remember the id attribute from Chapter 5, Marking Up Text, where
+we used it to name generic div and span elements. Here, we’re going to use it
+to name an element so that it can serve as a fragment identifier—that is, the
+destination of a link.</p>
+<p>Here is a sample of the source for the glossary page. Because I want users to
+be able to link directly to the “H” heading, I’ll add the id attribute to it and
+give it the value “startH” (FIGURE 6-11 1):
+<h2 id="startH">H</h2>
+Step 2: Linking to the destination
+With the identifier in place, now I can make a link to it.
+At the top of the page, I’ll create a link down to the “startH” fragment 2. As for
+any link, I use the a element with the href attribute to provide the location of
+the link. To indicate that I’m linking to a fragment, I use the octothorpe symbol
+(#), also called a hash, pound, or number symbol, before the fragment name:
+<p>... F | G | <a href="#startH">H</a> | I | J ...</p>
+And that’s it. Now when someone clicks the H from the listing at the top of
+the page, the browser will jump down and display the section starting with
+the “H” heading 3.
+	</p>
+	<p>
+	Writing Pathnames to Images
+The src attribute in the img element works the same as the href attribute in
+anchors. Because you’ll most likely be using images from your own server, the
+src attributes within your image elements will be set to relative URLs.
+Let’s look at a few examples from the Jen’s Kitchen site. First, to add an image
+to the index.html page, you’d use the following markup:</p>
+<p><img src="images/jenskitchen.gif" alt="">
+The URL says, “Look in the current directory (jenskitchen) for the images
+directory; in there you will find jenskitchen.gif.”
+Now for the pièce de résistance. Let’s add an image to the file couscous.html:
+<img src="../../images/spoon.gif" alt=""></p>
+<p>This is a little more complicated than what we’ve seen so far. This pathname
+tells the browser to go up two directory levels to the top-level directory and,
+once there, look in the images directory for an image called spoon.gif. Whew!
+Of course, you could simplify that path by going the site root relative route, in
+which case the pathname to spoon.gif (and any other file in the images direc-
+tory) could be accessed like this:
+<img src="/images/spoon.gif" alt=""></p><p>
+The trade-off is that you won’t see the image in place until the site is uploaded
+to the server, but it does make maintenance easier once it’s there.
+	</p>
+	<p><a href="#table-heading">Go to the top table title in this page</a></p>
+  </body>
+</html>

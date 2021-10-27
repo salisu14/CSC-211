@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta description="A box model" content="main containing h1 and p" />
+		<title>Box Model</title>
+		<style>
+			body {
+				border: 3px dotted black;
+				margin: 10px;
+				width: 750px;
+			}
+
+			main {
+				border: 2px solid black;
+				width: 600px;
+				margin: 20px;
+				padding: 10px;
+			}
+			h1,
+			p {
+				border: 1px dashed black;
+				padding: 10px;
+			}
+			h1 {
+				margin: 0.5em 0.25em;
+				padding-left: 15px;
+			}
+			p {
+				margin: 0;
+				padding-left: 15px;
+			}
+			.p-shadow {
+				text-shadow: 2px 2px 0px red;
+				color: blue;
+				margin-top: 50px;
+				padding: 20px;
+
+				text-align: center;
+
+				text-indent: 2em;
+
+				text-decoration: none;
+
+				font: 180%/140% Helvetica, Arial, san-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<h1>San Joaquin Valley Town Hall</h1>
+			<p>
+				Welcome to San Joaquin Valley Town Hall. We have some fascinating
+				speakers for you this season!
+			</p>
+		</main>
+		<p class="p-shadow">Just a text</p>
+	</body>
+</html>
