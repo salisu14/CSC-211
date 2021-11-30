@@ -1,0 +1,312 @@
+Q1
+<html>
+<head>
+<title>Static Webpage Using Table</title>
+</head>
+<body>
+<h3>Name: </h3>
+<h3>Reg No: </h3>
+<h3>Course: </h3>
+<h3>Dept:</h3>
+
+<table border="2px" >
+ <tr>
+   <td>Name</td>
+   <td>Age</td>
+   <td>Gender</td>
+ </tr>
+ 
+  <tr>
+   <td>Shamsu Aminu</td>
+   <td>20 Year old</td>
+   <td>Male</td>
+ </tr>
+ 
+ <tr>
+   <td>Umar Sani</td>
+   <td>19 Year old</td>
+   <td>Female</td>
+ </tr>
+</table>
+
+
+</body>
+</html>
+Q2
+<html>
+<head>
+<title>Static Webpage With All Text Format</title>
+</head>
+<body bgcolor = "Yellow">
+<h3>Name: </h3>
+<h3>Reg No: </h3>
+<h3>Course: </h3>
+<h3>Dept:</h3>
+
+<center><h1> Welcome To My Website(This is H1)</h1></center>
+<h2>In this simple page, you will learn alot regarding to (This is H2):</h2>
+<h3>HTML (This is H3),</h3>
+<h4>CSC (This is H4),</h4>
+<h5>JavaScript (This is H5),</h5>
+<h6>And PHP (This is H6).</h6>
+
+
+</body>
+</html>
+Q3
+<html>
+<head>
+<title>Webpage Using List Tags</title>
+</head>
+<body>
+<h3>Name: </h3>
+<h3>Reg No: </h3>
+<h3>Course: </h3>
+<h3>Dept:</h3>
+
+<p>Below are list of Some Website Programs, they're listed using ordered HTML Tags:</p>
+<ol>
+ <li>HTML</li>
+ <li>CSC</li>
+ <li>JavaScript</li>
+ <li>PHP</li>
+</ol>
+
+<p>Below are list of Some Programming Languages, they're listed using Unordered HTML Tags:</p>
+<ul>
+ <li>C++</li>
+ <li>C#</li>
+ <li>JAVA</li>
+</ul>
+</body>
+</html>
+Q4
+<html>
+<head>
+<title>Webpage Incluided with Imaage</title>
+</head>
+<body>
+<h3>Name: </h3>
+<h3>Reg No: </h3>
+<h3>Course: </h3>
+<h3>Dept:</h3>
+
+<p>It's time to enjoy today, since we spend alot of time coding. Enjoy this short Story.</p>
+<center><h3>The Lion and the Rabbit</h3></center>
+
+<p>Once there was a Lion in the jungle who used to kill 2-3 animals daily for his meal.
+ All animals went to him to tell, that daily one of them will come to him for his meal.</p>
+ 
+ <p> So, the Lion agreed and this started going for many days. One day,
+ it was Rabbit's turn. When he was on his way he saw a well.
+Now he plans to kill the lion and save himself. He went to lion and told him that, 
+there is another lion who claims to be more powerful than him.</p>
+
+<p>Then lion asks the rabbit to take him to that lion. The rabbit takes him to
+ the well and said he lives here. When the lion looked in the well he saw his own 
+ reflection and jumped in the well and
+dies.</p>
+
+<h4><i>Moral: Wisdom wins might.</i></h4>
+
+<img src="img/animals.png" width="350px" height="350px">
+
+</body>
+</html>
+Q5
+<html>
+<body>
+<Center>
+<img src=”employee_icon.png” height=52 width=52>
+<Font size=”+3″ color=red>Employee Registration Form</font>
+<form method=post action=”prac.html”>
+<table>
+<tr>
+<td></td>
+<td><input type=radio name=initial checked>Mr.
+<input type=radio name=initial>Mrs.
+<input type=radio name=initial>Ms.</td>
+</tr><tr>
+<td>First Name</td>
+<td><input type=text name=fn placeholder=”First Name”></td>
+</tr><tr>
+<td>Last Name</td>
+<td><input type=text name=ln placeholder=”Last Name”></td>
+</tr> <tr>
+<td>Mail Address1</td>
+<td><input type=text name=add1></td>
+</tr><tr>
+<td>Mail Address2</td>
+<td><input type=text name=add2></td>
+</tr><tr>
+<td>City</td>
+<td><input type=text name=ct></td>
+</tr><tr>
+<td>State</td>
+<td><select name=state>
+<option value=”Kano”>Kano
+<option value=”Jigawa”>Jigawa
+<option value=”Kaduna”>Kaduna
+<option value=”Katsina”>Katsina
+</select>
+</td>
+</tr><tr>
+<td>Zip</td>
+<td><input type=text name=zp></td>
+</tr><tr>
+<td>Upload Photo</td>
+<td><input type=file name=photo></td>
+</tr><tr>
+<td>E-Mail</td>
+<td><input type=text name=email size=30></td>
+</tr><tr>
+<td>Mobile</td>
+<td><input type=text name=mob placeholder=”+234″></td>
+</tr><tr>
+<td>Languages known</td>
+<td><input type=checkbox name=lk value=Hausa
+checked>Hausa</td>
+
+</tr><tr>
+<td></td>
+<td><input type=checkbox name=lk value=French
+checked>French</td>
+</tr><tr>
+<td></td>
+<td><input type=checkbox name=lk value=English
+checked>English</td>
+</tr><tr>
+<td></td>
+<td><input type=checkbox name=lk value=Yoruba >Yoruba</td>
+</tr><tr>
+<td>Additional Information</td>
+<td><textarea name=add rows=3 cols=20 placeholder=”Optional”
+wrap></textarea></td>
+</tr><tr>
+<td></td>
+<td><input type=submit value=submit>&nbsp;<input type=reset
+value=reset></td>
+</table>
+</form>
+</body>
+</html>
+
+ Q6
+DOCTYPE html>
+<html>
+<head>
+	<title>First page</title>
+</head>
+<body>
+	<a href="another_page.html">Go</a>
+	<a title="This leads to another page" href="another_page.html">title attribute</a><br>
+	<a href="another_page.html"><img src="img.jpg" width="500px" height="500px"></a>
+<h1>
+	Heading
+</h1>
+<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+<ul>
+	<li>list</li>
+	<li>list</li>
+	<li>list</li>
+</ul>
+<ol>
+	<li>list</li>
+	<li>list</li>
+	<li>list</li>
+</ol>
+<img src="img.jpg">
+</body>
+</html>
+Q7
+<!DOCTYPE html>
+<html>
+<head>
+	<title>another page</title>
+</head>
+<body>
+<h1>heading 1</h1>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+<h2>Heading 2</h2>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+</body>
+</html>
+Q11
+<!DOCTYPE html>
+<html>
+<head>
+	<title>college website</title>
+</head>
+<body>
+	<header>
+		College website
+	</header>
+	<nav>
+		<ul>
+			<a href="college-website.html"><li>Home</li></a>
+			<a href="academics.html"><li>Academics</li></a>
+			<a href="admission.html"><li>Admission</li></a>
+			<a href="gallery.html"><li>Gallery</li></a>
+		</ul>
+	</nav>
+	<h1>heading</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+</body>
+</html>
+
