@@ -1,0 +1,11 @@
+table, tr, td, th, thead {
+    border-collapse: collapse;
+    border: 1px solid #000; 
+    padding: 10px;
+}
+caption{
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 200%;
+}
