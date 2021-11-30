@@ -1,0 +1,80 @@
+body{
+    background: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav{
+    padding-bottom: 4%;
+    text-align: center;
+}
+
+.container{
+    background: #fff;
+    width: 70%;
+    margin: 0px auto;
+    padding: 15px;
+}
+.link{
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    background: green;
+    border-radius: 6px;
+}
+
+.link:hover{
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    background: rgb(10, 26, 10);
+    border-radius: 6px;
+}
+
+.active{
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    background: rgb(10, 26, 10);
+    border-radius: 6px;
+}
+
+.logo{
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+.line{
+    background: #c0c0c0;
+    height: 1px;
+}
+.content{
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    padding-top: 10px;
+    
+}
+
+.h3{
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    padding-top: 10px;
+    box-shadow: 0px 5px 5px green;
+}
+
+.btn-primary{
+    padding: 10px;
+    background: green;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.inputs{
+    padding: 10px;
+    border-radius: 4px;
+    width: 50%;
+    border: 1px solid #9c9999;
+}
