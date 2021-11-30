@@ -1,0 +1,120 @@
+body{
+    background:rgb(35, 40, 15);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container{
+    background: rgb(100, 122, 11);
+    width: 50%;
+    margin: 0px auto;
+    padding: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.head{
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    box-shadow: 0px 10px  10px 0px #c5a518;
+    border-radius: 20px;
+}
+
+nav{
+    padding: 20px;
+    color: #a09d05;
+}
+
+
+.link{
+    padding: 10px;
+    text-decoration: none;
+    background: rgb(35, 40, 15);
+    border-radius: 10px;
+    color: rgb(233, 241, 243)
+    font-size: 18px;
+}
+
+.link2{
+    padding: 10px;
+    text-decoration: none;
+    background: rgb(220, 243, 8);
+    border-radius: 10px;
+    color: rgb(185, 197, 21);
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.active{
+    padding: 10px;
+    text-decoration: none;
+    background: rgb(35, 40, 15);
+    border-radius: 10px;
+    color: rgb(248, 144, 9);
+    font-size: 18px;
+}
+
+.link:hover{
+    padding: 10px;
+    text-decoration: none;
+    background: rgb(35, 40, 15);
+    border-radius: 10px;
+    color: rgb(236, 194, 3);
+    font-size: 18px;
+}
+.line{
+    background: #e4e3e3;
+    height: 1px;
+}
+
+.sub{
+    padding: 10px;
+
+}
+footer{
+    padding: 10px;
+    background: rgb(35, 40, 15);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.myrow, .mytd{
+    border-collapse: collapse;
+    padding: 10px;
+}
+.mytable{
+    border-collapse: collapse;
+    padding: 10px;
+    width: 100%;
+}
+
+.btn-primary{
+    padding: 10px;
+    background: rgb(35, 40, 15);
+    border: none;
+    border-radius: 5px;
+    color: rgb(95, 82, 8);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.btn-primary:hover{
+    padding: 10px;
+    background: rgb(35, 40, 15);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(228, 188, 13);
+}
+
+.inputs{
+    padding: 10px;
+    border-radius: 4px;
+    width: 50%;
+    border: 1px solid #a09d05;
+}
+.h2{
+    color: #a09d05;
+
+}
