@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery</title>
+        <style>
+        .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+h6{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+        </style>
+    </head>
+    <body>
+        <h6>OUR PHOTO GALLERY</h6>
+        <div class="row">
+            <div class="column">
+                <img src="photo1.jpg" alt="">
+                <img src="photo2.jpg" alt="">
+                <img src="photo3.jpg" alt="">
+                <img src="photo4.jpg" alt="">
+                <img src="photo5.jpg" alt="">
+                <img src="photo6.jpg" alt="">
+                <img src="photo7.jpg" alt="">
+
+            </div>
+            <div class="column">
+                <img src="pexels-1.jpg" alt="">
+                <img src="pexels2.jpg" alt="">
+                <img src="pexels3.jpg" alt="">
+                <img src="pexels4.jpg" alt="">
+                <img src="pexels5.jpg" alt="">
+                <img src="pexels6.jpg" alt="">
+
+            </div>
+            <div class="column">
+                <img src="pexels-1.jpg" alt="">
+                <img src="pexels2.jpg" alt="">
+                <img src="pexels3.jpg" alt="">
+                <img src="pexels4.jpg" alt="">
+                <img src="pexels5.jpg" alt="">
+                <img src="pexels6.jpg" alt="">
+
+            </div>
+            <div class="column">
+                <img src="pexels-1.jpg" alt="">
+                <img src="pexels2.jpg" alt="">
+                <img src="pexels3.jpg" alt="">
+                <img src="pexels4.jpg" alt="">
+                <img src="pexels5.jpg" alt="">
+                <img src="pexels6.jpg" alt="">
+
+           
+        </div>
+    </body>
+</html>
