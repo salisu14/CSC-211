@@ -1,0 +1,115 @@
+body{
+    background:rgb(129, 123, 123);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container{
+    background: #fff;
+    width: 70%;
+    margin: 0px auto;
+    padding: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.head{
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    box-shadow: 0px 10px  10px 0px #c0c0c0;
+    border-radius: 20px;
+}
+
+nav{
+    padding: 20px;
+}
+
+
+.link{
+    padding: 10px;
+    text-decoration: none;
+    background: green;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.link2{
+    padding: 10px;
+    text-decoration: none;
+    background: green;
+    border-radius: 10px;
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.active{
+    padding: 10px;
+    text-decoration: none;
+    background: rgb(30, 31, 30);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.link:hover{
+    padding: 10px;
+    text-decoration: none;
+    background: rgb(69, 155, 69);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+.line{
+    background: #e4e3e3;
+    height: 1px;
+}
+
+.sub{
+    padding: 10px;
+
+}
+footer{
+    padding: 10px;
+    background: green;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.myrow, .mytd{
+    border-collapse: collapse;
+    padding: 10px;
+}
+.mytable{
+    border-collapse: collapse;
+    padding: 10px;
+    width: 100%;
+}
+
+.btn-primary{
+    padding: 10px;
+    background: green;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.btn-primary:hover{
+    padding: 10px;
+    background: rgb(67, 117, 67);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+.inputs{
+    padding: 10px;
+    border-radius: 4px;
+    width: 50%;
+    border: 1px solid #9c9999;
+}
